@@ -1,0 +1,141 @@
+body{
+    display: inline;
+    margin: 0;
+}
+
+::selection{
+    background: none;
+    color: inherit;
+}
+
+*::-webkit-scrollbar{
+    width: 0px; 
+    height: 0px;
+}
+
+#container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    margin: 0;
+}
+
+h1{
+    margin: 8px 0 8px 0;
+}
+
+ul{
+    margin: 0;
+}
+
+#inputSection{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    margin-bottom: 8px;
+}
+
+#outputSection{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputSectionPortion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.inputSectionPortion .inputContainer{
+    width: 100%;
+    height: 50%;
+}
+
+#inputGrid{
+    display: grid;
+    grid-template-rows: repeat(2, 120px);
+    grid-template-columns: repeat(2, 120px);
+    gap: 8px;
+}
+
+#inputGrid .inputGridBox, button, .select-selected, .select-options{
+    display: block;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    border: solid 4px black;
+}
+
+#firstInputGridBox{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#secondInputGridBox{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#thirdInputGridBox{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#fourthInputGridBox{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+button, .select-selected{
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+
+button:hover, .select-selected:hover{
+    background-color: black;
+    color: white;
+}
+
+.select{
+    position: relative;
+}
+
+.select-selected{
+    min-width: 240px;
+    margin-bottom: 8px;
+}
+
+.select-options{
+    position: absolute;
+    display: none;
+    height: 240px;
+    overflow-y: scroll;
+    z-index: 2;
+}
+
+.select-option{
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.select-option:hover{
+    background-color: rgb(225, 225, 225);
+} 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocoTk8's Cooking Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="select.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>CocoTk8's Cooking Game</h1>
+        <div id="inputSection">
+            <div class="inputSectionPortion">
+                <div class="inputContainer">
+                    <div class="select" id="firstInput">
+                        <div class="select-selected" data-value="">Select an ingredient</div>
+                        <div class="select-options">
+                            <div class="select-option" data-value="beef">Beef</div>
+                            <div class="select-option" data-value="bread">Bread</div>
+                            <div class="select-option" data-value="cheese">Cheese</div>
+                            <div class="select-option" data-value="eggs">Eggs</div>
+                            <div class="select-option" data-value="butter">Butter</div>
+                            <div class="select-option" data-value="flour">Flour</div>
+                            <div class="select-option" data-value="sugar">Sugar</div>
+                            <div class="select-option" data-value="cream">Cream</div>
+                            <div class="select-option" data-value="milk">Milk</div>
+                            <div class="select-option" data-value="lettuce">Lettuce</div>
+                            <div class="select-option" data-value="tomato">Tomato</div>
+                            <div class="select-option" data-value="pasta">Pasta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputContainer">
+                    <div class="select" id="secondInput">
+                        <div class="select-selected" data-value="">Select an ingredient</div>
+                        <div class="select-options">
+                            <div class="select-option" data-value="beef">Beef</div>
+                            <div class="select-option" data-value="bread">Bread</div>
+                            <div class="select-option" data-value="cheese">Cheese</div>
+                            <div class="select-option" data-value="eggs">Eggs</div>
+                            <div class="select-option" data-value="butter">Butter</div>
+                            <div class="select-option" data-value="flour">Flour</div>
+                            <div class="select-option" data-value="sugar">Sugar</div>
+                            <div class="select-option" data-value="cream">Cream</div>
+                            <div class="select-option" data-value="milk">Milk</div>
+                            <div class="select-option" data-value="lettuce">Lettuce</div>
+                            <div class="select-option" data-value="tomato">Tomato</div>
+                            <div class="select-option" data-value="pasta">Pasta</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="inputGrid">
+                <div class="inputGridBox" id="firstInputGridBox"></div>
+                <div class="inputGridBox" id="secondInputGridBox"></div>
+                <div class="inputGridBox" id="thirdInputGridBox"></div>
+                <div class="inputGridBox" id="fourthInputGridBox"></div>
+            </div>
+            <div class="inputSectionPortion">
+                <div class="inputContainer">
+                    <div class="select" id="thirdInput">
+                        <div class="select-selected" data-value="">Select an ingredient</div>
+                        <div class="select-options">
+                            <div class="select-option" data-value="beef">Beef</div>
+                            <div class="select-option" data-value="bread">Bread</div>
+                            <div class="select-option" data-value="cheese">Cheese</div>
+                            <div class="select-option" data-value="eggs">Eggs</div>
+                            <div class="select-option" data-value="butter">Butter</div>
+                            <div class="select-option" data-value="flour">Flour</div>
+                            <div class="select-option" data-value="sugar">Sugar</div>
+                            <div class="select-option" data-value="cream">Cream</div>
+                            <div class="select-option" data-value="milk">Milk</div>
+                            <div class="select-option" data-value="lettuce">Lettuce</div>
+                            <div class="select-option" data-value="tomato">Tomato</div>
+                            <div class="select-option" data-value="pasta">Pasta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputContainer">
+                    <div class="select" id="fourthInput">
+                        <div class="select-selected" data-value="">Select an ingredient</div>
+                        <div class="select-options">
+                            <div class="select-option" data-value="beef">Beef</div>
+                            <div class="select-option" data-value="bread">Bread</div>
+                            <div class="select-option" data-value="cheese">Cheese</div>
+                            <div class="select-option" data-value="eggs">Eggs</div>
+                            <div class="select-option" data-value="butter">Butter</div>
+                            <div class="select-option" data-value="flour">Flour</div>
+                            <div class="select-option" data-value="sugar">Sugar</div>
+                            <div class="select-option" data-value="cream">Cream</div>
+                            <div class="select-option" data-value="milk">Milk</div>
+                            <div class="select-option" data-value="lettuce">Lettuce</div>
+                            <div class="select-option" data-value="tomato">Tomato</div>
+                            <div class="select-option" data-value="pasta">Pasta</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="outputSection">
+            <p id="outputText"></p>
+            <button id="button">Make</button>
+
+            <h1>Cookbook</h1>
+            <ul id="cookbook">
+                <li>Burger: Bread, Beef, Lettuce, Tomato</li>
+                <li>Hotdog: Bread, Beef, Lettuce</li>
+                <li>Lasagna: Pasta, Cheese, Beef, Tomato</li>
+                <li>Spaghetti: Pasta, Tomato, Cheese</li>
+                <li>Pizza: Flour, Tomato, Cheese</li>
+                <li>Cake: Flour, Eggs, Milk, Sugar</li>
+                <li>Donut: Flour, Eggs, Milk, Cream</li>
+                <li>Cupcake: Flour, Eggs, Sugar, Cream</li>
+                <li>Pancake: Flour, Eggs, Milk, Butter</li>
+                <li>Bagel: Bread, Cream</li>
+                <li>Salad: Lettuce, Tomato</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
